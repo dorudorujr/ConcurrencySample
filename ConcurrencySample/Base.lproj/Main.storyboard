@@ -40,10 +40,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xNo-T5-4eB"/>
+                    <connections>
+                        <segue destination="fHj-dB-uSY" kind="presentation" identifier="case1" id="bWE-zo-APL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7Z-1D-g66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-317" y="-76"/>
+        </scene>
+        <!--Case1-->
+        <scene sceneID="lLN-Oe-9qZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Case1" id="fHj-dB-uSY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ay6-ox-f8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9os-MW-EoY">

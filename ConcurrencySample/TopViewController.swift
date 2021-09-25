@@ -30,4 +30,15 @@ class TopViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         Cell.allCases.count
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            guard let cell = tableView.cellForRow(at: indexPath) else { return }
+
+            switch Cell(rawValue: cell.textLabel?.text ?? "") {
+            case .case1:
+                self.performSegue(withIdentifier: "case1", sender: nil)
+            default:
+                return
+            }
+        }
 }
