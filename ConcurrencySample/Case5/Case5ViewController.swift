@@ -12,6 +12,7 @@ class Case5ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = "非同期関数の連結(ネスト地獄からの解放)"
         
         fetchUserIconBefore(for: "") { icon in
             do {
