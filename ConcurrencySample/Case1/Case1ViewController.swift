@@ -23,6 +23,15 @@ class Case1ViewController: UIViewController {
         Task {
             // print("After ready")とprint(data)が同じスレッドで実行される保証はない
             print("After ready")
+            // downloadDataAfterを呼ぶ際にselfを必要としない理由
+            // Task のイニシャライザでは
+            // @_implicitSelfCapture という隠し属性を使って実現されているので
+            // selfを暗黙的に strong キャプチャする
+            // なぜselfを暗黙的にstrongキャプチャしても問題ないかというと
+            // Task のイニシャライザに渡されるクロージャはリファレンスサイクルを作らないから
+            // (通常のクロージャとは違い残り続けることはないから)
+            // このクロージャは実行が完了すれば解放されるため
+            // ここでキャプチャされた self がリファレンスサイクルを作り、メモリリークにつながる恐れはない
             let data = await downloadDataAfter(from: URL(string: "https://")!)
             print(data)
         }
