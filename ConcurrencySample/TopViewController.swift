@@ -11,6 +11,7 @@ class TopViewController: UITableViewController {
     
     private enum Cell: String, CaseIterable {
         case case1 = "Case1"
+        case case2 = "Case2"
     }
 
     override func viewDidLoad() {
@@ -35,8 +36,8 @@ class TopViewController: UITableViewController {
             guard let cell = tableView.cellForRow(at: indexPath) else { return }
 
             switch Cell(rawValue: cell.textLabel?.text ?? "") {
-            case .case1:
-                self.performSegue(withIdentifier: "case1", sender: nil)
+            case .case1, .case2:
+                self.performSegue(withIdentifier: cell.textLabel?.text ?? "", sender: nil)
             default:
                 return
             }
