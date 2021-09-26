@@ -109,7 +109,6 @@
 		C76AD78926FF38D800321D9B /* ConcurrencySample */ = {
 			isa = PBXGroup;
 			children = (
-				C76AD7CA27001C4F00321D9B /* Resource */,
 				C76AD7BF27000F3500321D9B /* Util */,
 				C76AD7BC26FF6F0A00321D9B /* Case1 */,
 				C76AD7C32700177600321D9B /* Case2 */,
@@ -173,13 +172,6 @@
 				C76AD7C6270017AA00321D9B /* Case2.storyboard */,
 			);
 			path = Case2;
-			sourceTree = "<group>";
-		};
-		C76AD7CA27001C4F00321D9B /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
