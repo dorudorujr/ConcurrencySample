@@ -31,7 +31,7 @@ class Case3ViewController: UIViewController {
         }
     }
     
-    func fetchUserBefore(for id: String, completion: @escaping (Result<User, Error>) -> Void) {
+    private func fetchUserBefore(for id: String, completion: @escaping (Result<User, Error>) -> Void) {
         downloadDataBefore(from: URL(string: "https://")!) { result in
             do {
                 let data = try result.get()
@@ -46,7 +46,7 @@ class Case3ViewController: UIViewController {
     /// downloadDataAfterやdecodeのtryを、fetchUser の throws で受けているため
     /// わざわざ catch して throw しなおさなくても
     ///  fetchUser には throws が付与されているのでそのままエラーを投げることができる
-    func fetchUserAfter(for id: String) async throws -> User {
+    private func fetchUserAfter(for id: String) async throws -> User {
         let data = try await downloadDataAfter(from: URL(string: "https://")!)
         let user = try JSONDecoder().decode(User.self, from: data)
         return user
@@ -55,13 +55,13 @@ class Case3ViewController: UIViewController {
 
 // MARK: downloadData メソッド
 extension Case3ViewController {
-    func downloadDataBefore(from url: URL, completion: @escaping (Result<Data, Error>) -> Void) {
+    private func downloadDataBefore(from url: URL, completion: @escaping (Result<Data, Error>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             completion(.success(self.parseJson(from: "{\"id\":1, \"name\":\"Suzuki\"}")!))
         }
     }
     
-    func downloadDataAfter(from url: URL) async throws -> Data {
+    private func downloadDataAfter(from url: URL) async throws -> Data {
         /// 多分1秒遅延
         await Task.sleep(1 * 1000 * 1000 * 1000)
         return self.parseJson(from: "{\"id\":2, \"name\":\"Yamamoto\"}")!

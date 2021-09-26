@@ -24,6 +24,8 @@
 		C76AD7CD270022C400321D9B /* Case3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AD7CC270022C400321D9B /* Case3ViewController.swift */; };
 		C76AD7CF270022CF00321D9B /* Case3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AD7CE270022CF00321D9B /* Case3.storyboard */; };
 		C76AD7D2270023FC00321D9B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AD7D1270023FC00321D9B /* User.swift */; };
+		C76AD7D5270042D000321D9B /* Case5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AD7D4270042D000321D9B /* Case5ViewController.swift */; };
+		C76AD7D7270042DC00321D9B /* Case5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AD7D6270042DC00321D9B /* Case5.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		C76AD7CC270022C400321D9B /* Case3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3ViewController.swift; sourceTree = "<group>"; };
 		C76AD7CE270022CF00321D9B /* Case3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case3.storyboard; sourceTree = "<group>"; };
 		C76AD7D1270023FC00321D9B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C76AD7D4270042D000321D9B /* Case5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case5ViewController.swift; sourceTree = "<group>"; };
+		C76AD7D6270042DC00321D9B /* Case5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case5.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +119,11 @@
 		C76AD78926FF38D800321D9B /* ConcurrencySample */ = {
 			isa = PBXGroup;
 			children = (
-				C76AD7CB270022B100321D9B /* Case3 */,
 				C76AD7BF27000F3500321D9B /* Util */,
 				C76AD7BC26FF6F0A00321D9B /* Case1 */,
 				C76AD7C32700177600321D9B /* Case2 */,
+				C76AD7CB270022B100321D9B /* Case3 */,
+				C76AD7D3270042B600321D9B /* Case5 */,
 				C76AD78A26FF38D800321D9B /* AppDelegate.swift */,
 				C76AD78C26FF38D800321D9B /* SceneDelegate.swift */,
 				C76AD79026FF38D800321D9B /* Main.storyboard */,
@@ -197,6 +202,15 @@
 				C76AD7D1270023FC00321D9B /* User.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		C76AD7D3270042B600321D9B /* Case5 */ = {
+			isa = PBXGroup;
+			children = (
+				C76AD7D4270042D000321D9B /* Case5ViewController.swift */,
+				C76AD7D6270042DC00321D9B /* Case5.storyboard */,
+			);
+			path = Case5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +321,7 @@
 				C76AD7C7270017AA00321D9B /* Case2.storyboard in Resources */,
 				C76AD79726FF38DB00321D9B /* LaunchScreen.storyboard in Resources */,
 				C76AD79426FF38DB00321D9B /* Assets.xcassets in Resources */,
+				C76AD7D7270042DC00321D9B /* Case5.storyboard in Resources */,
 				C76AD7CF270022CF00321D9B /* Case3.storyboard in Resources */,
 				C76AD79226FF38D800321D9B /* Main.storyboard in Resources */,
 			);
@@ -339,6 +354,7 @@
 				C76AD7C927001C4700321D9B /* UIViewController.swift in Sources */,
 				C76AD7D2270023FC00321D9B /* User.swift in Sources */,
 				C76AD78B26FF38D800321D9B /* AppDelegate.swift in Sources */,
+				C76AD7D5270042D000321D9B /* Case5ViewController.swift in Sources */,
 				C76AD78D26FF38D800321D9B /* SceneDelegate.swift in Sources */,
 				C76AD7C52700179D00321D9B /* Case2ViewController.swift in Sources */,
 			);
