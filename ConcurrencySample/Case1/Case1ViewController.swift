@@ -8,8 +8,11 @@
 import UIKit
 
 class Case1ViewController: UIViewController {
-
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
+        label.text = "非同期関数の利用（エラーハンドリングがない場合）"
+        
         print("--------- Case1ViewController ---------")
         super.viewDidLoad()
         print("Before ready")
