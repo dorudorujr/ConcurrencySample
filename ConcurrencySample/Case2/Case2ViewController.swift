@@ -52,9 +52,3 @@ extension Case2ViewController {
         return self.parseJson(from: "{\"id\":2, \"name\":\"Yamamoto\"}")!
     }
 }
-
-// MARK: User
-struct User: Codable {
-    let id: Int
-    let name: String
-}
