@@ -16,6 +16,7 @@ class Case11ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = "(task.cancel): 非同期処理のキャンセル（非同期 API の利用側）"
     }
     @IBAction func executionAction(_ sender: Any) {
        task = Task {
@@ -33,6 +34,7 @@ class Case11ViewController: UIViewController {
     }
     @IBAction func cancelAction(_ sender: Any) {
         // isCancelledのフラグを立てるだけ
+        // だから10秒間待ってdataが返ってくる
         // キャンセル処理は呼び出しメソッド側で行う
         // Case12にて実装
         task?.cancel()

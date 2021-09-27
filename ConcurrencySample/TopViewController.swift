@@ -18,6 +18,7 @@ class TopViewController: UITableViewController {
         case case9 = "Case9"
         case case10 = "Case10"
         case case11 = "Case11"
+        case case12 = "Case12"
     }
 
     override func viewDidLoad() {
@@ -42,7 +43,7 @@ class TopViewController: UITableViewController {
             guard let cell = tableView.cellForRow(at: indexPath) else { return }
 
             switch Cell(rawValue: cell.textLabel?.text ?? "") {
-            case .case1, .case2, .case3, .case5, .case6, .case9, .case10, .case11:
+            case .case1, .case2, .case3, .case5, .case6, .case9, .case10, .case11, .case12:
                 self.performSegue(withIdentifier: cell.textLabel?.text ?? "", sender: nil)
             default:
                 return

@@ -49,6 +49,7 @@
                         <segue destination="dG2-Mv-h6g" kind="show" identifier="Case9" id="u7g-fw-P83"/>
                         <segue destination="CBr-5b-CfL" kind="show" identifier="Case10" id="hNm-mS-TTb"/>
                         <segue destination="IYi-y7-OkW" kind="show" identifier="Case11" id="idK-F2-pZW"/>
+                        <segue destination="tga-Ec-Ijp" kind="show" identifier="Case12" id="fh8-b8-7MH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7Z-1D-g66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -134,6 +135,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBL-ef-RlV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="276" y="406"/>
+        </scene>
+        <!--Case12-->
+        <scene sceneID="pC4-QW-75W">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Case12" id="tga-Ec-Ijp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="c81-8k-1B9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbM-kS-Aj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="459"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9os-MW-EoY">
