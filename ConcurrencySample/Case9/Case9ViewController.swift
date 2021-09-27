@@ -81,10 +81,8 @@ extension Case9ViewController {
     }
     
     private func downloadDataAfter(from url: URL) async throws -> Data {
-        try await withCheckedThrowingContinuation { continuation in
-            downloadDataBefore(from: url) { result in
-                continuation.resume(with: result)
-            }
-        }
+        /// 多分1秒遅延
+        await Task.sleep(1 * 1000 * 1000 * 1000)
+        return self.parseJson(from: "{\"id\":2, \"name\":\"Yamamoto\"}")!
     }
 }
