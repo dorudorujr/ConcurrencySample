@@ -44,6 +44,12 @@
 		C7BEAAEA2704AB050079283E /* Case16.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BEAAE92704AB050079283E /* Case16.storyboard */; };
 		C7BEAAED2704B32E0079283E /* Case17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEAAEC2704B32E0079283E /* Case17ViewController.swift */; };
 		C7BEAAEF2704B3390079283E /* Case17.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BEAAEE2704B3390079283E /* Case17.storyboard */; };
+		C7BEAAF42704B63E0079283E /* Case18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEAAF32704B63E0079283E /* Case18ViewController.swift */; };
+		C7BEAAF62704B64B0079283E /* Case18.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BEAAF52704B64B0079283E /* Case18.storyboard */; };
+		C7BEAAF82704B68A0079283E /* Case19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEAAF72704B68A0079283E /* Case19ViewController.swift */; };
+		C7BEAAFA2704B6980079283E /* Case19.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BEAAF92704B6980079283E /* Case19.storyboard */; };
+		C7BEAAFC2704B6C60079283E /* Case20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEAAFB2704B6C60079283E /* Case20ViewController.swift */; };
+		C7BEAAFE2704B6D20079283E /* Case20.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BEAAFD2704B6D20079283E /* Case20.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +111,12 @@
 		C7BEAAE92704AB050079283E /* Case16.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case16.storyboard; sourceTree = "<group>"; };
 		C7BEAAEC2704B32E0079283E /* Case17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case17ViewController.swift; sourceTree = "<group>"; };
 		C7BEAAEE2704B3390079283E /* Case17.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case17.storyboard; sourceTree = "<group>"; };
+		C7BEAAF32704B63E0079283E /* Case18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case18ViewController.swift; sourceTree = "<group>"; };
+		C7BEAAF52704B64B0079283E /* Case18.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case18.storyboard; sourceTree = "<group>"; };
+		C7BEAAF72704B68A0079283E /* Case19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case19ViewController.swift; sourceTree = "<group>"; };
+		C7BEAAF92704B6980079283E /* Case19.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case19.storyboard; sourceTree = "<group>"; };
+		C7BEAAFB2704B6C60079283E /* Case20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case20ViewController.swift; sourceTree = "<group>"; };
+		C7BEAAFD2704B6D20079283E /* Case20.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Case20.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,9 @@
 				C7BEAAE1270491770079283E /* Case15 */,
 				C7BEAAE62704AADA0079283E /* Case16 */,
 				C7BEAAEB2704B2D50079283E /* Case17 */,
+				C7BEAAF02704B6030079283E /* Case18 */,
+				C7BEAAF12704B60A0079283E /* Case19 */,
+				C7BEAAF22704B6100079283E /* Case20 */,
 				C76AD78A26FF38D800321D9B /* AppDelegate.swift */,
 				C76AD78C26FF38D800321D9B /* SceneDelegate.swift */,
 				C76AD79026FF38D800321D9B /* Main.storyboard */,
@@ -339,6 +354,33 @@
 			path = Case17;
 			sourceTree = "<group>";
 		};
+		C7BEAAF02704B6030079283E /* Case18 */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEAAF32704B63E0079283E /* Case18ViewController.swift */,
+				C7BEAAF52704B64B0079283E /* Case18.storyboard */,
+			);
+			path = Case18;
+			sourceTree = "<group>";
+		};
+		C7BEAAF12704B60A0079283E /* Case19 */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEAAF72704B68A0079283E /* Case19ViewController.swift */,
+				C7BEAAF92704B6980079283E /* Case19.storyboard */,
+			);
+			path = Case19;
+			sourceTree = "<group>";
+		};
+		C7BEAAF22704B6100079283E /* Case20 */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEAAFB2704B6C60079283E /* Case20ViewController.swift */,
+				C7BEAAFD2704B6D20079283E /* Case20.storyboard */,
+			);
+			path = Case20;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -445,11 +487,14 @@
 			files = (
 				C76AD7BE26FF71A600321D9B /* Case1.storyboard in Resources */,
 				C7BEAAEA2704AB050079283E /* Case16.storyboard in Resources */,
+				C7BEAAF62704B64B0079283E /* Case18.storyboard in Resources */,
 				C76AD7DC27004A0300321D9B /* Case6.storyboard in Resources */,
 				C76AD7C7270017AA00321D9B /* Case2.storyboard in Resources */,
+				C7BEAAFE2704B6D20079283E /* Case20.storyboard in Resources */,
 				C76AD79726FF38DB00321D9B /* LaunchScreen.storyboard in Resources */,
 				C76AD7EB2700BBB800321D9B /* Case11.storyboard in Resources */,
 				C76AD79426FF38DB00321D9B /* Assets.xcassets in Resources */,
+				C7BEAAFA2704B6980079283E /* Case19.storyboard in Resources */,
 				C76AD7D7270042DC00321D9B /* Case5.storyboard in Resources */,
 				C76AD7E1270092CB00321D9B /* Case9.storyboard in Resources */,
 				C7BEAAE5270492360079283E /* Case15.storyboard in Resources */,
@@ -485,6 +530,8 @@
 			files = (
 				C7BEAAED2704B32E0079283E /* Case17ViewController.swift in Sources */,
 				C7BEAAE82704AAF90079283E /* Case16ViewController.swift in Sources */,
+				C7BEAAF42704B63E0079283E /* Case18ViewController.swift in Sources */,
+				C7BEAAFC2704B6C60079283E /* Case20ViewController.swift in Sources */,
 				C76AD7BB26FF6EFC00321D9B /* TopViewController.swift in Sources */,
 				C7554F272702007700145838 /* Case12ViewController.swift in Sources */,
 				C76AD7E42700996500321D9B /* Case10ViewController.swift in Sources */,
@@ -496,6 +543,7 @@
 				C76AD7C927001C4700321D9B /* UIViewController.swift in Sources */,
 				C76AD7D2270023FC00321D9B /* User.swift in Sources */,
 				C76AD78B26FF38D800321D9B /* AppDelegate.swift in Sources */,
+				C7BEAAF82704B68A0079283E /* Case19ViewController.swift in Sources */,
 				C7BEAADE27047F2E0079283E /* Case14ViewController.swift in Sources */,
 				C76AD7D5270042D000321D9B /* Case5ViewController.swift in Sources */,
 				C76AD7DF270092BF00321D9B /* Case9ViewController.swift in Sources */,

@@ -54,6 +54,9 @@
                         <segue destination="SPG-PU-vYd" kind="show" identifier="Case15" id="Oj9-Y1-soF"/>
                         <segue destination="XsN-Tu-bxx" kind="show" identifier="Case16" id="iQk-TL-rWp"/>
                         <segue destination="GTY-pk-W1y" kind="show" identifier="Case17" id="Jzn-hy-sVt"/>
+                        <segue destination="nzx-P5-WM8" kind="show" identifier="Case18" id="Rjb-4i-Sxi"/>
+                        <segue destination="Ys1-yp-EaD" kind="show" identifier="Case19" id="9PX-cq-QPM"/>
+                        <segue destination="jLL-OH-3I4" kind="show" identifier="Case20" id="Fkz-is-lSI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7Z-1D-g66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -129,6 +132,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFC-2E-ppO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="270" y="131"/>
+        </scene>
+        <!--Case20-->
+        <scene sceneID="jac-sU-AC4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Case20" id="jLL-OH-3I4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Dj2-Bo-Kax"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rc4-Lq-NJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1157" y="347"/>
+        </scene>
+        <!--Case19-->
+        <scene sceneID="EOC-QO-fDJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Case19" id="Ys1-yp-EaD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wL6-O5-tei"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9o2-7s-1QN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1203" y="481"/>
+        </scene>
+        <!--Case18-->
+        <scene sceneID="NSp-Qh-L9q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Case18" id="nzx-P5-WM8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OIZ-Od-L5d"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aq-dJ-bTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-965" y="502"/>
         </scene>
         <!--Case17-->
         <scene sceneID="Szi-4R-h5x">

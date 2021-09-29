@@ -12,6 +12,7 @@ class Case17ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = " (actor): 共有された状態の変更（複数インスタンスの連携）"
         let counter: Counter = .init()
         Task {
             _ = await counter.transferCount(to: Counter())
