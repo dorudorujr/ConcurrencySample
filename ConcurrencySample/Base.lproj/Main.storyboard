@@ -50,11 +50,22 @@
                         <segue destination="CBr-5b-CfL" kind="show" identifier="Case10" id="hNm-mS-TTb"/>
                         <segue destination="IYi-y7-OkW" kind="show" identifier="Case11" id="idK-F2-pZW"/>
                         <segue destination="tga-Ec-Ijp" kind="show" identifier="Case12" id="fh8-b8-7MH"/>
+                        <segue destination="cnE-G0-KvB" kind="show" identifier="Case14" id="pT9-f1-p0o"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7Z-1D-g66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-317" y="-76"/>
+        </scene>
+        <!--Case14-->
+        <scene sceneID="v6f-53-PvE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Case14" id="cnE-G0-KvB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AnF-xh-25I"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cz9-IN-SIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="496"/>
         </scene>
         <!--Case1-->
         <scene sceneID="lLN-Oe-9qZ">
