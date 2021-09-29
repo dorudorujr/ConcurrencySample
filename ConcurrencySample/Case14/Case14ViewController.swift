@@ -8,9 +8,11 @@
 import UIKit
 
 class Case14ViewController: UIViewController {
-
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = " (actor): 共有された状態の変更"
 
         let counter: Counter = .init()
         
