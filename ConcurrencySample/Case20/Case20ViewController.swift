@@ -9,22 +9,55 @@ import UIKit
 
 class Case20ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    private let state: Case20UserViewState = Case20UserViewState()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let _ = Task {[weak self] in
+            guard let state = self?.state else { return }
+            for await _ in state.objectWillChange.values {
+                guard let self = self else { return }
+                self.nameLabel.text = state.user?.name
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Task {
+            await state.loadUser()
+        }
     }
-    */
+}
 
+// MARK: downloadData メソッド
+@MainActor
+final class Case20UserViewState: ObservableObject {
+    let userId: String = ""
+    @Published var user: User?
+    
+    func loadUser() async {
+        do {
+            user = try await fetchUserAfter(for: userId)
+        } catch {
+            
+        }
+    }
+    
+    // MARK: ベースのメソッド
+    
+    private func fetchUserAfter(for id: String) async throws -> User {
+        let data = try await downloadDataAfter(from: URL(string: "https://")!)
+        let user = try JSONDecoder().decode(User.self, from: data)
+        return user
+    }
+    
+    private func downloadDataAfter(from url: URL) async throws -> Data {
+        /// 多分1秒遅延
+        await Task.sleep(1 * 1000 * 1000 * 1000)
+        return "{\"id\":2, \"name\":\"Yamamoto\"}".data(using: String.Encoding.utf8)!
+    }
 }
