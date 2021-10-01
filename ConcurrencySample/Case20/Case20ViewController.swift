@@ -27,6 +27,8 @@ class Case20ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // loadUserは非同期処理なのでawaitが必要
+        // Actorの処理は同期的にできるが.....
         Task {
             await state.loadUser()
         }
