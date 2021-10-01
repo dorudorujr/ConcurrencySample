@@ -22,16 +22,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxc-3L-4zV">
+                                <rect key="frame" x="186" y="568.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hOZ-Nb-ntm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1eb-8J-jDE"/>
+                            <constraint firstItem="pxc-3L-4zV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="HDJ-Rj-9Ou"/>
                             <constraint firstItem="hOZ-Nb-ntm" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Jor-7s-qd7"/>
+                            <constraint firstItem="pxc-3L-4zV" firstAttribute="top" secondItem="hOZ-Nb-ntm" secondAttribute="bottom" constant="110" id="rOe-AQ-2kd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="hOZ-Nb-ntm" id="B77-If-HnR"/>
+                        <outlet property="testNameLabel" destination="pxc-3L-4zV" id="Psz-K4-XdV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
